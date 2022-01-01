@@ -21,7 +21,7 @@ bool IsForbidSkin(void *instance) {'
    }
     return old_IsForbidSkin(instance);}`
     
-- **Then Add** MSHookFunction((void*)getAbsoluteAddress(targetLibName, 0x1EEBBA4), (void*) IsForbidSkin, (void**) &old_IsForbidSkin);
+- **Then Add** `MSHookFunction((void*)getAbsoluteAddress(targetLibName, 0x1EEBBA4), (void*) IsForbidSkin, (void**) &old_IsForbidSkin);`
 
 **Compile And You Can See ^__^**
 
